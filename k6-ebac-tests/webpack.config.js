@@ -6,7 +6,9 @@ const path = require('path');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    user: './simulations/user.test.js'
+    user: './simulations/user.test.js',
+    product: './simulations/product.test.js',
+    customer: './simulations/customer.test.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

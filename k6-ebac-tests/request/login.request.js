@@ -19,7 +19,7 @@ export default class Login {
         })
         this.#token = response.json('accessToken')
         check(response, {
-            "status deve ser 201": (r) => r.status === 201
+            "status do login deve ser 201": (r) => r.status === 201
         });
     }
 
